@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — Yingying Liu</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="nav-brand" href="index.html">Yingying Liu</a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">主页</span><span class="lang-ja">ホーム</span></a></li>
+    <li><a href="news.html"><span class="lang-en">News</span><span class="lang-zh">动态</span><span class="lang-ja">ニュース</span></a></li>
+    <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></a></li>
+    <li><a href="collaborations.html"><span class="lang-en">Collaborations</span><span class="lang-zh">合作</span><span class="lang-ja">共同研究</span></a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="zh">中文</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn" data-lang="ja">日本語</button>
+  </div>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-wrap">
+  <div class="page-header">
+    <h1><span class="lang-en">News</span><span class="lang-zh">最新动态</span><span class="lang-ja">ニュース</span></h1>
+    <p>
+      <span class="lang-en">Research activities, publications, conferences, talks, and milestones.</span>
+      <span class="lang-zh">科研动态、论文发表、学术会议、演讲及里程碑事件。</span>
+      <span class="lang-ja">研究活動、論文発表、学会、講演、マイルストーン。</span>
+    </p>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="news-layout">
+
+        <!-- ── News feed ────────────────────────────────── -->
+        <div class="news-feed">
+
+          <!-- ① DA paper 2026 -->
+          <article class="news-item" data-category="publication" id="news-da-2026">
+            <div class="news-meta">
+              <span class="news-date">2026</span>
+              <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Real-Time Data Assimilation System for National-Scale Flood Forecasting — Published in <em>Journal of Hydrology</em></span>
+              <span class="lang-zh">国家尺度洪水预报实时数据同化系统——发表于《水文学报》（Journal of Hydrology）</span>
+              <span class="lang-ja">国家スケール洪水予測のためのリアルタイムデータ同化システム — <em>Journal of Hydrology</em> 掲載</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">This study presents the first real-time, online data assimilation (DA) system for a national-scale hydrodynamic model in Japan, assimilating hourly water surface elevation from over 1,800 in-situ gauges using the Local Ensemble Transform Kalman Filter (LETKF). The system improved flood forecasting coverage from 10% to 58.4% and consistently enhanced forecast skill up to 24 hours ahead.</span>
+              <span class="lang-zh">本研究在日本首次建立了面向国家尺度水动力模型的实时在线数据同化（DA）系统，采用局地集合变换卡尔曼滤波（LETKF），同化来自全国逾1,800个站点的逐时水位观测数据。系统将洪水预报覆盖率从10%提升至58.4%，并在24小时预见期内持续改善预报效果。</span>
+              <span class="lang-ja">本研究は日本初となる国家スケールの水理モデル向けリアルタイムデータ同化システムを構築し、全国1,800以上の観測点から毎時水面標高データをLETKFで同化。洪水予測カバー率を10%から58.4%に向上させ、24時間先の予測精度を一貫して改善しました。</span>
+            </div>
+            <div class="news-links">
+              <a class="news-link" href="https://www.sciencedirect.com/science/article/pii/S0022169426007778" target="_blank" rel="noopener">Full Paper</a>
+              <a class="news-link" href="https://doi.org/10.1016/j.jhydrol.2026.135680" target="_blank" rel="noopener">DOI</a>
+              <a class="news-link" href="https://github.com/yingyingtokyo/DA_TEjapan" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <!-- ② SAR co-author 2025 -->
+          <article class="news-item" data-category="publication" id="news-sar-2025">
+            <div class="news-meta">
+              <span class="news-date">2025 · 12</span>
+              <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Co-authored SAR-Based Flood Mapping Paper Published in <em>Journal of Hydrology</em></span>
+              <span class="lang-zh">合著SAR洪水区域识别论文发表于《水文学报》（Journal of Hydrology）</span>
+              <span class="lang-ja">SAR洪水マッピング共著論文が <em>Journal of Hydrology</em> に掲載</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">A probabilistic framework integrating multi-frequency SAR data (X-, C-, and L-band), land use/land cover information, and hydrological model outputs achieves flood mapping accuracy above 0.87 across Japan, Bangladesh, the USA, and China — outperforming state-of-the-art deep learning baselines.</span>
+              <span class="lang-zh">该研究提出一种概率框架，融合多频SAR数据（X、C、L波段）、土地利用/覆盖信息及水文模型输出，在日本、孟加拉国、美国和中国的洪水制图精度均超过0.87，优于先进深度学习基线模型。</span>
+              <span class="lang-ja">多周波SAR（X・C・Lバンド）データ、土地被覆情報、水文モデル出力を統合した確率論的フレームワークにより、日本・バングラデシュ・米国・中国で洪水マッピング精度0.87以上を達成し、最先端深層学習モデルを上回りました。</span>
+            </div>
+            <div class="news-links">
+              <a class="news-link" href="https://www.sciencedirect.com/science/article/abs/pii/S002216942501412X" target="_blank" rel="noopener">Full Paper</a>
+              <a class="news-link" href="https://doi.org/10.1016/j.jhydrol.2025.134074" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </article>
+
+          <!-- ③ AGU 2025 oral -->
+          <article class="news-item" data-category="conference" id="news-agu2025">
+            <div class="news-meta">
+              <span class="news-date">2025 · 12</span>
+              <span class="news-cat cat-conference"><span class="lang-en">Conference</span><span class="lang-zh">学术会议</span><span class="lang-ja">学会</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Oral Presentation at AGU 2025 Annual Meeting, New Orleans</span>
+              <span class="lang-zh">在AGU 2025年会（新奥尔良）作口头报告</span>
+              <span class="lang-ja">AGU 2025年次大会（ニューオーリンズ）にて口頭発表</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Presented the real-time data assimilation system for Japan-wide flood forecasting, addressing how DA enhances streamflow and flood forecast accuracy and how long its beneficial impact persists for multi-day lead times.</span>
+              <span class="lang-zh">介绍了面向全日本洪水预报的实时数据同化系统，探讨了DA如何提升径流及洪水预报精度，以及改善效果在多日预见期内的持续性。</span>
+              <span class="lang-ja">全国スケール洪水予測のためのリアルタイムデータ同化システムを発表。DAによる流量・洪水予測精度の向上効果と、その影響が複数日先の予測においていつまで持続するかを議論しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/AGU2025.jpg" alt="AGU 2025 oral presentation" />
+            </div>
+            <div style="margin: 0.75rem 0;">
+              <video controls preload="none" poster="images/AGU2025.jpg">
+                <source src="images/AGU2025.MP4" type="video/mp4" />
+              </video>
+            </div>
+          </article>
+
+          <!-- ④ Join Cornell PhD 2025-08 -->
+          <article class="news-item" data-category="milestone" id="news-cornell">
+            <div class="news-meta">
+              <span class="news-date">2025 · 08</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Joined Critical Infrastructure Systems Lab @ Cornell University for Ph.D. Study!</span>
+              <span class="lang-zh">加入康奈尔大学关键基础设施系统实验室，开启博士研究之旅！</span>
+              <span class="lang-ja">コーネル大学 Critical Infrastructure Systems Lab にてPhD研究を開始！</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Joined the Civil and Environmental Engineering department at Cornell University, supervised by Dr. Stefano Galelli, to pursue doctoral research in large-scale water systems and flood forecasting.</span>
+              <span class="lang-zh">加入康奈尔大学土木与环境工程系，在Stefano Galelli博士的指导下开展大尺度水系统与洪水预报方向的博士研究。</span>
+              <span class="lang-ja">コーネル大学土木環境工学科に入学し、Stefano Galelli博士の指導のもと、大規模水システムおよび洪水予測の分野で博士研究を開始しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Stefano202508.jpg" alt="Cornell University, August 2025" />
+            </div>
+          </article>
+
+          <!-- ⑤ Graduate UTokyo 2025-08 -->
+          <article class="news-item" data-category="milestone" id="news-grad-utokyo">
+            <div class="news-meta">
+              <span class="news-date">2025 · 08</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Graduated from Yoshimura Lab @ the University of Tokyo — M.S. Received!</span>
+              <span class="lang-zh">从东京大学芳村研究室毕业，顺利获得硕士学位！</span>
+              <span class="lang-ja">東京大学 芳村研究室を卒業 — 修士号を取得！</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Received the Master of Science degree in Natural Environmental Studies from the University of Tokyo, under the supervision of Prof. Kei Yoshimura and Assoc. Prof. Dai Yamazaki (Institute of Industrial Science, IIS).</span>
+              <span class="lang-zh">在东京大学生产技术研究所（IIS）芳村圭教授和山崎大助理教授的联合指导下，获得自然环境学专攻硕士学位。</span>
+              <span class="lang-ja">東京大学生産技術研究所（IIS）の芳村圭教授・山崎大准教授のご指導のもと、自然環境学専攻の修士号を取得しました。</span>
+            </div>
+            <div class="news-photos">
+              <!-- Placeholder: add Yoshimura2025.jpg and Yamazaki2025.jpg to images/ when available -->
+              <img src="images/utokyo1.JPG" alt="University of Tokyo graduation 2025" />
+              <img src="images/utokyo2.JPG" alt="University of Tokyo graduation 2025" />
+            </div>
+          </article>
+
+          <!-- ⑥ UTEC funding 2025-05 -->
+          <article class="news-item" data-category="grant" id="news-utec">
+            <div class="news-meta">
+              <span class="news-date">2025 · 05</span>
+              <span class="news-cat cat-grant"><span class="lang-en">Grant</span><span class="lang-zh">资助</span><span class="lang-ja">グラント</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Received UTEC Young Researchers Challenge Support Funding to Visit Cornell University</span>
+              <span class="lang-zh">获得UTEC年轻研究者海外研修资助（UTEC若手海外自由展開・研鑽支援プログラム），赴康奈尔大学访学</span>
+              <span class="lang-ja">UTECの若手海外自由展開・研鑽支援プログラムに採択され、コーネル大学への訪問研究を実施</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Selected as one of the top 6 young researchers at the University of Tokyo for international research funding. Visited Cornell University for collaborative research discussions and knowledge exchange.</span>
+              <span class="lang-zh">作为东京大学6名优秀青年研究者之一获得该项资助，赴康奈尔大学进行学术交流与合作研究。</span>
+              <span class="lang-ja">東京大学の若手研究者6名の一人として選出され、コーネル大学にて共同研究議論・知識交流を実施しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/cornell202505.jpg" alt="Cornell University visit, May 2025" />
+            </div>
+          </article>
+
+          <!-- ⑦ Invited talk Kyushu 2025-03 -->
+          <article class="news-item" data-category="talk" id="news-kyushu">
+            <div class="news-meta">
+              <span class="news-date">2025 · 03</span>
+              <span class="news-cat cat-talk"><span class="lang-en">Invited Talk</span><span class="lang-zh">特邀报告</span><span class="lang-ja">招待講演</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Invited Talk for JAXA Today's Earth Project @ Kyushu University</span>
+              <span class="lang-zh">受邀在九州大学作JAXA Today's Earth项目学术报告</span>
+              <span class="lang-ja">九州大学にてJAXA Today's Earth プロジェクトへの招待講演</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Delivered an invited talk on the development of a data assimilation system for the MATSIRO + CaMa-Flood hydrological model, and its potential application in JAXA's global flood forecast product Today's Earth.</span>
+              <span class="lang-zh">就MATSIRO+CaMa-Flood水文模型数据同化系统的开发及其在JAXA洪水预报产品Today's Earth中的潜在应用作特邀报告。</span>
+              <span class="lang-ja">MATSIRO＋CaMa-Floodモデルへのデータ同化システム開発と、JAXAの洪水予測プロダクト「Today's Earth」への応用可能性について招待講演を行いました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/kyushu1.jpg" alt="Kyushu University invited talk" />
+              <img src="images/kyushu2.jpg" alt="Kyushu University invited talk" />
+            </div>
+          </article>
+
+          <!-- ⑧ AGU 2024 poster Washington DC -->
+          <article class="news-item" data-category="conference" id="news-agu2024">
+            <div class="news-meta">
+              <span class="news-date">2024 · 12</span>
+              <span class="news-cat cat-conference"><span class="lang-en">Conference</span><span class="lang-zh">学术会议</span><span class="lang-ja">学会</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Two Poster Presentations at AGU 2024 Annual Meeting, Washington D.C.</span>
+              <span class="lang-zh">在AGU 2024年会（华盛顿特区）作两篇墙报展示</span>
+              <span class="lang-ja">AGU 2024年次大会（ワシントンD.C.）にてポスター発表2件</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Presented two posters: (1) an evaluation of SWOT satellite performance in measuring small rivers in Japan; (2) a study on enhancing ensemble-based data assimilation for hydrological models during Typhoon Hagibis.</span>
+              <span class="lang-zh">两篇墙报分别聚焦于：（1）SWOT卫星在日本小河流水位测量精度评估；（2）台风"哈吉贝斯"期间增强集合数据同化性能的研究。</span>
+              <span class="lang-ja">2件の発表：（1）日本の中小河川におけるSWOT衛星の精度評価、（2）台風ハギビス期間中の集合データ同化強化手法の研究。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/AGU20241.jpg" alt="AGU 2024 poster 1" />
+              <img src="images/AGU20242.jpg" alt="AGU 2024 poster 2" />
+            </div>
+          </article>
+
+          <!-- ⑨ Urban Climate paper 2024-05 -->
+          <article class="news-item" data-category="publication" id="news-urban-climate">
+            <div class="news-meta">
+              <span class="news-date">2024 · 05</span>
+              <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Co-authored Heatwave Modelling Paper Published in <em>Urban Climate</em></span>
+              <span class="lang-zh">合著城市热浪模拟论文发表于《城市气候》（Urban Climate）</span>
+              <span class="lang-ja">都市ヒートウェーブモデリング共著論文が <em>Urban Climate</em> に掲載</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Applied the WRF model with the BEP-BEM urban scheme to simulate thermal environments in five Chinese cities during heatwave events. Anthropogenic heat and geometric urban parameters were found to be the primary drivers of air temperature differences across local climate zones.</span>
+              <span class="lang-zh">应用耦合BEP-BEM城市方案的WRF模式，模拟中国五座城市热浪期间的热环境。研究发现，人为热排放与城市几何参数是不同局地气候区气温差异的主要驱动因子。</span>
+              <span class="lang-ja">BEP-BEM都市スキームを組み込んだWRFモデルで中国5都市のヒートウェーブ時の熱環境を解析。人為的発熱と都市幾何パラメータが局地気候区間の気温差の主要因であることを明らかにしました。</span>
+            </div>
+            <div class="news-links">
+              <a class="news-link" href="https://www.sciencedirect.com/science/article/abs/pii/S2212095524001895" target="_blank" rel="noopener">Full Paper</a>
+              <a class="news-link" href="https://doi.org/10.1016/j.uclim.2024.101993" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </article>
+
+          <!-- ⑩ Best Presentation Award UTokyo 2024-04 -->
+          <article class="news-item" data-category="milestone" id="news-award-utokyo">
+            <div class="news-meta">
+              <span class="news-date">2024 · 04</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Best Presentation Award — Hydrosphere Science Project @ University of Tokyo</span>
+              <span class="lang-zh">荣获东京大学水圈科学项目最佳演讲奖</span>
+              <span class="lang-ja">東京大学 水圏科学プロジェクト 最優秀発表賞を受賞</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Received the Best Presentation Award for a poster on evaluating SWOT satellite performance in small rivers, supervised by Assoc. Prof. Dai Yamazaki.</span>
+              <span class="lang-zh">因关于SWOT卫星小河流测量性能评估的墙报荣获最佳演讲奖，该研究由山崎大副教授指导。</span>
+              <span class="lang-ja">山崎大准教授指導のもと、SWOTの中小河川精度評価に関するポスター発表で最優秀発表賞を受賞しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Utokyo202404.jpg" alt="Best Presentation Award, University of Tokyo 2024" />
+            </div>
+          </article>
+
+          <!-- ⑪ Join UTokyo 2023-10 -->
+          <article class="news-item" data-category="milestone" id="news-join-utokyo">
+            <div class="news-meta">
+              <span class="news-date">2023 · 10</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Joined Yoshimura Lab @ the University of Tokyo for Master's Study!</span>
+              <span class="lang-zh">加入东京大学芳村研究室，开启硕士研究！</span>
+              <span class="lang-ja">東京大学 芳村研究室に入学し、修士研究を開始！</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Joined the Graduate School of Frontier Sciences (GSFS), Natural Environmental Studies, at the University of Tokyo, supervised by Prof. Kei Yoshimura.</span>
+              <span class="lang-zh">加入东京大学新领域创成科学研究科自然环境学专攻，在芳村圭教授的指导下开展硕士研究。</span>
+              <span class="lang-ja">東京大学大学院新領域創成科学研究科自然環境学専攻に入学し、芳村圭教授のご指導のもと修士研究を開始しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Yoshimura202308.JPG" alt="Joining Yoshimura Lab, University of Tokyo" />
+            </div>
+          </article>
+
+          <!-- ⑫ Challenge Cup Third Prize 2023-10 -->
+          <article class="news-item" data-category="milestone" id="news-challenge-cup-3">
+            <div class="news-meta">
+              <span class="news-date">2023 · 10</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Third-Class National Prize — "Challenge Cup" Chinese College Student Entrepreneurship Competition</span>
+              <span class="lang-zh">荣获"挑战杯"中国大学生创业计划竞赛全国三等奖</span>
+              <span class="lang-ja">「挑戦杯」中国大学生起業計画コンペ 全国三等賞を受賞</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Challenge1.JPG" alt="Challenge Cup award" />
+            </div>
+          </article>
+
+          <!-- ⑬ Graduate Sun Yat-sen 2023-06 -->
+          <article class="news-item" data-category="milestone" id="news-grad-sysu">
+            <div class="news-meta">
+              <span class="news-date">2023 · 06</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Graduated from Land Surface Process Modelling Lab @ Sun Yat-sen University — B.S. Received &amp; Excellent Thesis Award!</span>
+              <span class="lang-zh">从中山大学陆面过程模式开发实验室毕业，荣获学士学位及优秀毕业论文奖！</span>
+              <span class="lang-ja">中山大学 陸面過程モデル開発研究室を卒業 — 学士号取得・優秀卒業論文賞受賞！</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Received the Bachelor of Science degree in Atmospheric Science from Sun Yat-sen University, supervised by Assoc. Prof. Hua Yuan. Bachelor's thesis "Land Use and Land Cover Change Significantly Shifted Local Water Availability Globally over the Past Three Decades" was awarded the Excellent Bachelor Thesis (5 out of 130).</span>
+              <span class="lang-zh">在中山大学袁华副教授指导下，获得大气科学学士学位。毕业论文《过去三十年土地利用/覆盖变化对全球局地水资源可用性的显著影响》荣获优秀毕业论文奖（130篇中排名第5）。</span>
+              <span class="lang-ja">中山大学の袁華准教授のご指導のもと、大気科学の学士号を取得。卒業論文「過去30年間の土地利用・土地被覆変化が世界の局地的水利用可能量に与えた影響」が優秀卒業論文賞（130編中5位）を受賞しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Hua1.JPG" alt="Graduation Sun Yat-sen University 2023" />
+              <img src="images/Hua2.JPG" alt="Graduation Sun Yat-sen University 2023" />
+              <img src="images/Hua3.jpg" alt="Graduation Sun Yat-sen University 2023" />
+            </div>
+          </article>
+
+          <!-- ⑭ Challenge Cup Golden Prize Guangdong 2023-04 -->
+          <article class="news-item" data-category="milestone" id="news-challenge-gold">
+            <div class="news-meta">
+              <span class="news-date">2023 · 04</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Golden Prize — "Challenge Cup" Competition, Guangdong Province (Top 1 in 170,000+ participants!)</span>
+              <span class="lang-zh">荣获"挑战杯"广东省金奖（逾17万名参赛者中排名第1！）</span>
+              <span class="lang-ja">「挑戦杯」広東省大会 金賞受賞（17万人以上の参加者中1位！）</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Among more than 170,000 students and 2,129 projects, our team won the top prize in Guangdong Province (1st out of 17,000).</span>
+              <span class="lang-zh">在逾17万名学生、2129个项目的角逐中，我们团队荣获广东省最高奖（17000个项目中排名第1）。</span>
+              <span class="lang-ja">17万人以上の学生・2,129プロジェクトの中から、広東省最高賞（17,000プロジェクト中1位）を獲得しました。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Challenge2.JPG" alt="Challenge Cup Golden Prize Guangdong" />
+              <img src="images/Challenge3.PNG" alt="Challenge Cup award ceremony" />
+            </div>
+          </article>
+
+          <!-- ⑮ National Scholarship 2022-10 -->
+          <article class="news-item" data-category="milestone" id="news-national-scholarship">
+            <div class="news-meta">
+              <span class="news-date">2022 · 10</span>
+              <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Received National Scholarship Award — Top 0.02% of Students in China</span>
+              <span class="lang-zh">荣获国家奖学金（全国前0.02%学生）</span>
+              <span class="lang-ja">国家奨学金受賞 — 中国全学生の上位0.02%</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Awarded China's highest-level national scholarship, recognizing the top 0.02% of students nationwide.</span>
+              <span class="lang-zh">荣获中国最高级别国家奖学金，代表全国前0.02%的优秀学生。</span>
+              <span class="lang-ja">中国最高レベルの国家奨学金を受賞。全国学生の上位0.02%に相当します。</span>
+            </div>
+            <div class="news-photos">
+              <img src="images/Award.jpg" alt="National Scholarship Award" />
+            </div>
+          </article>
+
+          <!-- ⑯ Remote Sensing paper 2022-10 -->
+          <article class="news-item" data-category="publication" id="news-rs-2022">
+            <div class="news-meta">
+              <span class="news-date">2022 · 10</span>
+              <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
+            </div>
+            <div class="news-title">
+              <span class="lang-en">Paper on Satellite-Observed Aerosol Types over Greater Bay Area Published in <em>Remote Sensing</em></span>
+              <span class="lang-zh">卫星观测粤港澳大湾区海域气溶胶类型研究论文发表于《遥感》（Remote Sensing）</span>
+              <span class="lang-ja">粤港澳大湾区沿海域の衛星観測エアロゾルタイプ研究論文が <em>Remote Sensing</em> に掲載</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Analyzed the four-dimensional spatiotemporal characteristics of aerosol types over the Guangdong–Hong Kong–Macao Greater Bay Area using 15 years of satellite lidar profiles (2006–2020), revealing decreasing terrestrial aerosol influence in coastal waters.</span>
+              <span class="lang-zh">利用2006—2020年共15年的卫星激光雷达廓线数据，分析了粤港澳大湾区沿海气溶胶类型的四维时空特征，揭示了陆地气溶胶对沿海水域影响的减弱趋势。</span>
+              <span class="lang-ja">2006〜2020年の15年間の衛星ライダーデータを用いて、粤港澳大湾区沿海のエアロゾルタイプの四次元時空間特性を解析し、陸源エアロゾルの影響が沿海で低下していることを明らかにしました。</span>
+            </div>
+            <div class="news-links">
+              <a class="news-link" href="https://www.mdpi.com/2072-4292/14/21/5464" target="_blank" rel="noopener">Full Paper</a>
+              <a class="news-link" href="https://doi.org/10.3390/rs14215464" target="_blank" rel="noopener">DOI</a>
+            </div>
+          </article>
+
+        </div><!-- end news-feed -->
+
+        <!-- ── Filter nav (right column) ─────────────────── -->
+        <aside class="news-filter-nav">
+          <div class="filter-title">
+            <span class="lang-en">Filter</span>
+            <span class="lang-zh">分类筛选</span>
+            <span class="lang-ja">カテゴリ</span>
+          </div>
+          <button class="filter-btn active" data-cat="all">
+            <span class="lang-en">All</span>
+            <span class="lang-zh">全部</span>
+            <span class="lang-ja">すべて</span>
+          </button>
+          <button class="filter-btn" data-cat="publication">
+            <span class="lang-en">Publications</span>
+            <span class="lang-zh">论文发表</span>
+            <span class="lang-ja">論文発表</span>
+          </button>
+          <button class="filter-btn" data-cat="conference">
+            <span class="lang-en">Conferences</span>
+            <span class="lang-zh">学术会议</span>
+            <span class="lang-ja">学会発表</span>
+          </button>
+          <button class="filter-btn" data-cat="talk">
+            <span class="lang-en">Talks</span>
+            <span class="lang-zh">特邀报告</span>
+            <span class="lang-ja">招待講演</span>
+          </button>
+          <button class="filter-btn" data-cat="grant">
+            <span class="lang-en">Grants</span>
+            <span class="lang-zh">科研资助</span>
+            <span class="lang-ja">グラント</span>
+          </button>
+          <button class="filter-btn" data-cat="milestone">
+            <span class="lang-en">Awards &amp; Milestones</span>
+            <span class="lang-zh">获奖与里程碑</span>
+            <span class="lang-ja">受賞・マイルストーン</span>
+          </button>
+        </aside>
+
+      </div><!-- end news-layout -->
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://scholar.google.com/citations?user=myQ_Gn8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://github.com/yingyingtokyo" target="_blank" rel="noopener">GitHub</a>
+    <a href="images/CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="mailto:yl3984@cornell.edu">yl3984@cornell.edu</a>
+  </div>
+  <div>
+    <span class="lang-en">© 2025 Yingying Liu · Cornell University</span>
+    <span class="lang-zh">© 2025 柳莹莹 · 康奈尔大学</span>
+    <span class="lang-ja">© 2025 劉莹莹 · コーネル大学</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
