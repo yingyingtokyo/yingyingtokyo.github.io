@@ -1,0 +1,187 @@
+/* ============================================================
+   Home page styles
+   ============================================================ */
+
+/* ── Hero ───────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  height: 420px;
+  background-image:
+    linear-gradient(135deg, rgba(29,37,53,0.82) 0%, rgba(28,95,166,0.74) 100%),
+    url('../images/utokyo3.JPG');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content { padding: 2rem; }
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.hero-content .tagline {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* ── Intro card ─────────────────────────────────────────── */
+.intro-card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+}
+
+.intro-top {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.25rem;
+}
+
+.self-photo {
+  width: 140px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--border);
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.intro-text { flex: 1; }
+.intro-name {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+.intro-affil {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* ── Trilingual intro blocks ────────────────────────────── */
+.trilingual-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.lang-block {
+  border-left: 3px solid var(--border);
+  padding-left: 1.1rem;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.lang-block.en { border-color: var(--accent); }
+.lang-block.zh { border-color: var(--accent2); }
+.lang-block.ja { border-color: #7c3aed; }
+
+/* ── Research map ───────────────────────────────────────── */
+.research-map-figure {
+  margin: 2rem 0;
+  text-align: center;
+  background: var(--bg-panel);
+  border-radius: 10px;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+}
+.research-map-figure img { max-width: 100%; border-radius: 8px; margin: 0 auto; }
+.research-map-caption {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ── Education ──────────────────────────────────────────── */
+.education-section { margin-top: 1.75rem; }
+.edu-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  font-family: 'Raleway', sans-serif;
+}
+.edu-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.edu-list li {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.edu-list li:last-child { border-bottom: none; }
+.edu-degree {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+.edu-place { color: var(--text); }
+
+/* ── Profile links ──────────────────────────────────────── */
+.profile-links {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+.profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.18s;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+.profile-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(28,95,166,0.06);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+.profile-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero { height: 300px; }
+  .hero-content h1 { font-size: 1.8rem; }
+  .intro-top { flex-direction: column; align-items: center; text-align: center; }
+  .intro-card { padding: 1.5rem; }
+  .self-photo { width: 120px; height: 150px; }
+  .intro-name { font-size: 1.4rem; }
+}
+@media (max-width: 480px) {
+  .intro-card { padding: 1.25rem; }
+  .hero { height: 240px; }
+}

@@ -5,34 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yingying Liu</title>
   <meta name="description" content="Personal academic website of Yingying Liu, Ph.D. student in Civil and Environmental Engineering at Cornell University." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
 </head>
 <body>
 
-<!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
 <nav class="navbar">
   <a class="nav-brand" href="index.html">Yingying Liu</a>
   <ul class="nav-links">
-    <li><a href="index.html">
-      <span class="lang-en">Home</span>
-      <span class="lang-zh">主页</span>
-      <span class="lang-ja">ホーム</span>
-    </a></li>
-    <li><a href="news.html">
-      <span class="lang-en">News</span>
-      <span class="lang-zh">动态</span>
-      <span class="lang-ja">ニュース</span>
-    </a></li>
-    <li><a href="publications.html">
-      <span class="lang-en">Publications</span>
-      <span class="lang-zh">论文</span>
-      <span class="lang-ja">論文</span>
-    </a></li>
-    <li><a href="collaborations.html">
-      <span class="lang-en">Collaborations</span>
-      <span class="lang-zh">合作</span>
-      <span class="lang-ja">共同研究</span>
-    </a></li>
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">主页</span><span class="lang-ja">ホーム</span></a></li>
+    <li><a href="news.html"><span class="lang-en">News</span><span class="lang-zh">动态</span><span class="lang-ja">ニュース</span></a></li>
+    <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></a></li>
+    <li><a href="cooperations.html"><span class="lang-en">Cooperations</span><span class="lang-zh">合作</span><span class="lang-ja">共同研究</span></a></li>
   </ul>
   <div class="lang-switcher">
     <button class="lang-btn active" data-lang="en">EN</button>
@@ -48,84 +33,72 @@
 
 <div class="page-wrap">
 
-  <!-- ═══════════════════ HERO ═══════════════════════════ -->
+  <!-- Hero -->
   <div class="hero">
-    <div class="hero-bg"></div>
     <div class="hero-content">
       <h1>Yingying Liu &nbsp;/&nbsp; 柳莹莹</h1>
       <p class="tagline lang-en">Hydrology · Flood Forecasting · Data Assimilation · Cornell University</p>
-      <p class="tagline tagline-zh lang-zh">水文学 · 洪水预报 · 数据同化 · 康奈尔大学</p>
-      <p class="tagline tagline-ja lang-ja">水文学 · 洪水予測 · データ同化 · コーネル大学</p>
+      <p class="tagline lang-zh">水文学 · 洪水预报 · 数据同化 · 康奈尔大学</p>
+      <p class="tagline lang-ja">水文学 · 洪水予測 · データ同化 · コーネル大学</p>
     </div>
   </div>
 
-  <!-- ═══════════════════ INTRO ══════════════════════════ -->
+  <!-- Introduction -->
   <div class="container">
     <section>
       <div class="intro-card">
 
         <div class="intro-top">
-          <div class="photo-block">
-            <img class="self-photo" src="images/self_photo.PNG" alt="Yingying Liu" />
-          </div>
+          <img class="self-photo" src="images/self_photo.PNG" alt="Yingying Liu" />
           <div class="intro-text">
-            <div class="intro-name">Yingying Liu &nbsp;柳莹莹</div>
+            <div class="intro-name">Yingying Liu &nbsp; 柳莹莹</div>
             <div class="intro-affil lang-en">Ph.D. Student · Civil &amp; Environmental Engineering · Cornell University</div>
             <div class="intro-affil lang-zh">博士研究生 · 土木与环境工程系 · 康奈尔大学</div>
             <div class="intro-affil lang-ja">博士課程 · 土木環境工学 · コーネル大学</div>
           </div>
         </div>
 
-        <!-- Tri-lingual introduction — always shown in all three languages -->
+        <!-- Tri-lingual introduction — always stacked EN → ZH → JP -->
         <div class="always-all-langs trilingual-block">
 
           <div class="lang-block en">
-            <div class="lang-label">English</div>
-            <p>
-              Yingying Liu is a Ph.D. student in Civil and Environmental Engineering at Cornell
-              University. Her research focuses on human interventions in global hydrology
-              (reservoir operation, irrigation, and industrial water use), large-scale
-              hydrological modeling, and advanced techniques for flood forecasting — including
-              data assimilation (DA) and AI/deep learning approaches. She develops an
-              open-source, real-time DA module for a global hydrological model to enhance flood
-              forecasting accuracy, with significant potential for application in Japan's early
-              warning systems. Currently, she is working on the development of a reservoir
-              module for the VIC model and VIC calibration.
-            </p>
+            <p>Yingying Liu is a Ph.D. student in Civil and Environmental Engineering at Cornell
+            University. Her research focuses on human interventions in global hydrology
+            (reservoir operation, irrigation, and industrial water use), large-scale
+            hydrological modeling, and advanced techniques for flood forecasting — including
+            data assimilation (DA) and AI/deep learning approaches. She develops an
+            open-source, real-time data assimilation module for a global hydrological model
+            to enhance flood forecasting accuracy, with significant potential for application
+            in Japan's early warning systems. Currently, she is working on the development
+            of a reservoir module for the VIC model and VIC calibration.</p>
           </div>
 
           <div class="lang-block zh">
-            <div class="lang-label">中文</div>
-            <p>
-              柳莹莹是康奈尔大学土木与环境工程系的博士研究生。她的研究聚焦于人类活动对全球水文的影响
-              （包括水库调度、灌溉及工业用水），大尺度水文模拟，以及洪水预报先进方法——涵盖数据同化（DA）
-              与人工智能/深度学习技术。她正在开发一个面向全球水文模型的开源实时数据同化模块，以提升洪水
-              预报精度，并有望在日本早期预警系统中得到应用。目前，她还致力于VIC模型水库模块的开发与参数
-              率定工作。
-            </p>
+            <p>柳莹莹是康奈尔大学土木与环境工程系的博士研究生。她的研究聚焦于人类活动对全球水文的影响
+            （包括水库调度、灌溉及工业用水）、大尺度水文模拟，以及洪水预报先进方法——涵盖数据同化（DA）
+            与人工智能/深度学习技术。她正在开发一个面向全球水文模型的开源实时数据同化模块，以提升洪水
+            预报精度，并有望在日本早期预警系统中得到应用。目前，她还致力于VIC模型水库模块的开发与参数
+            率定工作。</p>
           </div>
 
           <div class="lang-block ja">
-            <div class="lang-label">日本語</div>
-            <p>
-              劉莹莹（リュウ・インイン）は、コーネル大学土木環境工学科の博士課程学生です。研究は、
-              グローバル水文学における人間の介入（ダム操作・灌漑・工業用水）、大規模水文モデリング、
-              および洪水予測の先進技術（データ同化・AI/深層学習）に焦点を当てています。グローバル水文
-              モデル向けのオープンソースリアルタイムデータ同化モジュールを開発し、洪水予測精度の向上と
-              日本の早期警報システムへの応用が期待されています。現在は、VICモデルへの貯水池モジュールの
-              開発とキャリブレーションにも取り組んでいます。
-            </p>
+            <p>劉莹莹（柳莹莹）は、コーネル大学土木環境工学科の博士課程学生です。研究は、グローバル水文学
+            における人間の介入（ダム操作・灌漑・工業用水）、大規模水文モデリング、および洪水予測の先進
+            技術（データ同化・AI/深層学習）に焦点を当てています。グローバル水文モデル向けのオープンソース
+            リアルタイムデータ同化モジュールを開発し、洪水予測精度の向上と日本の早期警報システムへの応用
+            が期待されています。現在は、VICモデルへの貯水池モジュールの開発とキャリブレーションにも取り
+            組んでいます。</p>
           </div>
 
-        </div><!-- end always-all-langs -->
+        </div>
 
-        <!-- Research map -->
+        <!-- Research Map -->
         <figure class="research-map-figure">
-          <img src="images/research_map.png" alt="Research overview map" />
-          <figcaption>
-            <span class="lang-en">Research overview</span>
-            <span class="lang-zh">研究概览</span>
-            <span class="lang-ja">研究概要図</span>
+          <img src="images/research_map.png" alt="Research Map" />
+          <figcaption class="research-map-caption">
+            <span class="lang-en">Research Map</span>
+            <span class="lang-zh">研究地图</span>
+            <span class="lang-ja">研究マップ</span>
           </figcaption>
         </figure>
 
@@ -151,9 +124,9 @@
             </li>
             <li>
               <span class="edu-degree">
-                <span class="lang-en">M.S. &nbsp;2025</span>
-                <span class="lang-zh">硕士 &nbsp;2025</span>
-                <span class="lang-ja">修士 &nbsp;2025</span>
+                <span class="lang-en">M.S. 2025</span>
+                <span class="lang-zh">硕士 2025</span>
+                <span class="lang-ja">修士 2025</span>
               </span>
               <span class="edu-place">
                 <span class="lang-en">Natural Environmental Studies, University of Tokyo</span>
@@ -163,9 +136,9 @@
             </li>
             <li>
               <span class="edu-degree">
-                <span class="lang-en">B.S. &nbsp;2023</span>
-                <span class="lang-zh">学士 &nbsp;2023</span>
-                <span class="lang-ja">学士 &nbsp;2023</span>
+                <span class="lang-en">B.S. 2023</span>
+                <span class="lang-zh">学士 2023</span>
+                <span class="lang-ja">学士 2023</span>
               </span>
               <span class="edu-place">
                 <span class="lang-en">Atmospheric Science, Sun Yat-sen University</span>
@@ -179,13 +152,11 @@
         <!-- Profile links -->
         <div class="profile-links">
           <a class="profile-btn" href="https://scholar.google.com/citations?user=myQ_Gn8AAAAJ&hl=en" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 7.07 17.07"/><path d="M12 12v.01"/></svg>
-            <span class="lang-en">Google Scholar</span>
-            <span class="lang-zh">谷歌学术</span>
-            <span class="lang-ja">Google Scholar</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.5 14.5L5 12l7-10 7 10-4.5 2.5"/><path d="M12 12v7"/></svg>
+            Google Scholar
           </a>
           <a class="profile-btn" href="images/CV.pdf" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             <span class="lang-en">Curriculum Vitae</span>
             <span class="lang-zh">个人简历</span>
             <span class="lang-ja">履歴書（CV）</span>
@@ -196,13 +167,12 @@
           </a>
         </div>
 
-      </div><!-- end intro-card -->
+      </div>
     </section>
-  </div><!-- end container -->
+  </div>
 
-</div><!-- end page-wrap -->
+</div>
 
-<!-- ═══════════════════════ FOOTER ════════════════════════ -->
 <footer>
   <div class="footer-links">
     <a href="https://scholar.google.com/citations?user=myQ_Gn8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
@@ -213,7 +183,7 @@
   <div>
     <span class="lang-en">© 2025 Yingying Liu · Cornell University</span>
     <span class="lang-zh">© 2025 柳莹莹 · 康奈尔大学</span>
-    <span class="lang-ja">© 2025 劉莹莹 · コーネル大学</span>
+    <span class="lang-ja">© 2025 柳莹莹 · コーネル大学</span>
   </div>
 </footer>
 
