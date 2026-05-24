@@ -54,6 +54,12 @@
         items.forEach(item => {
           item.classList.toggle('hidden', cat !== 'all' && item.dataset.category !== cat);
         });
+        // Scroll to first visible item
+        const first = Array.from(items).find(i => !i.classList.contains('hidden'));
+        if (first) {
+          const offset = first.getBoundingClientRect().top + window.scrollY - 90;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
       });
     });
   }

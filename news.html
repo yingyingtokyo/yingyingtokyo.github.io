@@ -47,22 +47,28 @@
         <!-- ── News feed ──────────────────────────────────── -->
         <div class="news-feed">
 
-          <!-- 2026 DA paper -->
+          <!-- ① DA paper 202605 -->
           <article class="news-item" data-category="publication">
             <div class="news-meta">
-              <span class="news-date">2026</span>
+              <span class="news-date">202605</span>
               <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Real-Time Data Assimilation System for National-Scale Flood Forecasting — Published in <em>Journal of Hydrology</em></span>
-              <span class="lang-zh">国家尺度洪水预报实时数据同化系统——发表于《水文学报》（Journal of Hydrology）</span>
-              <span class="lang-ja">国家スケール洪水予測のためのリアルタイムデータ同化システム — <em>Journal of Hydrology</em> 掲載</span>
+              <span class="lang-en">Publish data assimilation paper on Journal of Hydrology</span>
+              <span class="lang-zh">数据同化论文发表于《水文学报》（Journal of Hydrology）</span>
+              <span class="lang-ja">データ同化論文が Journal of Hydrology に掲載</span>
+            </div>
+            <div class="news-paper-title">
+              <span class="lang-en">Application of real-time data assimilation system to improve streamflow forecasts in Japan</span>
+              <span class="lang-zh">实时数据同化系统在日本径流预报改善中的应用</span>
+              <span class="lang-ja">リアルタイムデータ同化システムによる日本の流量予測改善への応用</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">The first real-time, online data assimilation (DA) system for a national-scale hydrodynamic model in Japan, assimilating hourly water surface elevation from over 1,800 in-situ gauges via the LETKF. The system improved flood forecasting coverage from 10% to 58.4% and enhanced forecast skill up to 24 hours ahead.</span>
-              <span class="lang-zh">日本首个面向国家尺度水动力模型的实时在线数据同化（DA）系统，采用LETKF同化来自全国逾1,800个站点的逐时水位观测数据，将洪水预报覆盖率从10%提升至58.4%，并在24小时预见期内持续改善预报效果。</span>
-              <span class="lang-ja">日本初となる国家スケール水理モデル向けリアルタイムデータ同化システム。LETKFにより全国1,800以上の観測点の毎時水面標高データを同化し、予測カバー率を10%から58.4%に向上させ、24時間先まで予測精度を改善しました。</span>
+              <span class="lang-en">Data assimilation (DA) can improve hydrodynamic model performance by integrating real-time observations, yet its practical use at national scale remains limited. This study presents the first development of a real-time online DA system in Japan for a large-scale hydrodynamic model, assimilating hourly water surface elevation (WSE) observations from 1800 in-situ gauges across the country. The system employs the Local Ensemble Transform Kalman Filter (LETKF), which updates model states using only spatially relevant observations. This localization expands DA coverage from 10% to 58.4% by leveraging nearby gauges to correct conditions even at non-observed locations. System performance was evaluated across three major flood events in Japan and evaluated on WSE, river discharge, and inundation extent. For discharge, 65% of stations improved, with over 60% achieving a Kling-Gupta Efficiency (KGE) above 0.5, demonstrating benefits for non-assimilated variables as well. Forecasting skill was also enhanced. In events with relatively good OL predictions, DA outperformed OL simulations for lead times up to 5 hours. In events with poor OL predictions, DA consistently enhanced forecasts one-day-ahead. Comparison with SAR-derived flood extent further confirmed improved inundation mapping within 24-hour lead times, as DA results exhibit reduced overestimation relative to OL. These results demonstrate a practical real-time DA framework for national-scale flood forecasting and management.</span>
+              <span class="lang-zh">数据同化（DA）通过整合实时观测数据，可改善水动力模型性能，但其在国家尺度的实际应用仍十分有限。本研究首次在日本开发了面向大尺度水动力模型的实时在线DA系统，同化来自全国1800个站点的逐时水位（WSE）观测数据，采用局地集合变换卡尔曼滤波（LETKF）仅利用空间相关观测更新模型状态。局地化处理将DA覆盖率从10%提升至58.4%。系统在日本三次重大洪水事件中进行了验证，65%的站点径流预报有所改善，60%以上的站点KGE超过0.5。预见期方面，OL预报较好时DA可在5小时内超越OL，OL预报较差时DA可持续改善1天预见期的预报。SAR衍生洪水范围对比进一步确认了24小时预见期内淹没制图的改善效果。</span>
+              <span class="lang-ja">データ同化（DA）はリアルタイム観測を統合することで水理モデルの精度向上を可能にしますが、国家スケールでの実用化はまだ限られています。本研究は日本で初めて、大規模水理モデルへのリアルタイムオンラインDAシステムを開発しました。全国1,800観測点からの毎時水面標高（WSE）データをLETKFで同化し、DA適用範囲を10%から58.4%に拡大。三大洪水イベントで評価した結果、65%の地点で流量予測が改善し、60%以上がKGE≥0.5を達成。DA効果は最大5時間先まで持続することが確認されました。</span>
             </div>
+            <img class="pub-screenshot" src="images/p4.png" alt="Paper screenshot: DA paper" />
             <div class="news-links">
               <a class="news-link" href="https://www.sciencedirect.com/science/article/pii/S0022169426007778" target="_blank" rel="noopener">Full Paper</a>
               <a class="news-link" href="https://doi.org/10.1016/j.jhydrol.2026.135680" target="_blank" rel="noopener">DOI</a>
@@ -70,101 +76,116 @@
             </div>
           </article>
 
-          <!-- 2025-12 SAR paper -->
+          <!-- ② SAR paper 202512 -->
           <article class="news-item" data-category="publication">
             <div class="news-meta">
-              <span class="news-date">2025 · 12</span>
+              <span class="news-date">202512</span>
               <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Co-authored SAR-Based Probabilistic Flood Mapping Paper — <em>Journal of Hydrology</em></span>
-              <span class="lang-zh">合著多频SAR概率洪水制图论文——发表于《水文学报》</span>
-              <span class="lang-ja">SAR確率論的洪水マッピング共著論文 — <em>Journal of Hydrology</em> 掲載</span>
+              <span class="lang-en">Publish SAR-derived flooding areas co-author paper on Journal of Hydrology</span>
+              <span class="lang-zh">合著SAR洪水范围识别论文发表于《水文学报》</span>
+              <span class="lang-ja">SAR洪水域抽出共著論文が Journal of Hydrology に掲載</span>
+            </div>
+            <div class="news-paper-title">
+              <span class="lang-en">Global flood extent monitoring using SAR satellite and hydrological data: A multi-scale and multi-source approach</span>
+              <span class="lang-zh">利用SAR卫星与水文数据的全球洪水范围监测：多尺度、多源方法</span>
+              <span class="lang-ja">SAR衛星と水文データを用いたグローバル洪水域モニタリング：マルチスケール・マルチソースアプローチ</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">A probabilistic framework integrating multi-frequency SAR (X-, C-, L-band), land use/land cover, and hydrological model outputs achieves flood mapping accuracy above 0.87 across Japan, Bangladesh, the USA, and China — outperforming state-of-the-art deep learning baselines.</span>
-              <span class="lang-zh">融合多频SAR（X、C、L波段）、土地利用/覆盖信息及水文模型输出的概率框架，在日本、孟加拉国、美国和中国的洪水制图精度均超过0.87，优于先进深度学习基线模型。</span>
-              <span class="lang-ja">多周波SAR・土地被覆・水文モデル出力を統合した確率論的フレームワークにより、日本・バングラデシュ・米国・中国で精度0.87以上を達成し、最先端深層学習モデルを凌駕しました。</span>
+              <span class="lang-en">Accurate flood extent detection remains challenging due to diverse land cover characteristics and the limited temporal resolution of remote sensing data. This paper proposes a probabilistic framework that integrates multi-frequency Synthetic Aperture Radar (SAR) data, land use and land cover (LULC) information, historical water occurrence records, and hydrological model outputs to enhance flood mapping accuracy. Specifically, the method combines SAR observations acquired at X-band (TerraSAR-X), C-band (Sentinel-1, GF-3), and L-band (ALOS-2) with spatially resolved prior information derived from Global Surface Water (GSW) occurrence data and hydrological predictions from the Today's Earth (TE) system. To validate the framework, we tested it across multiple SAR frequency bands, applied it to diverse flood events in Japan, Bangladesh, the USA and China. Validation results showed that the proposed method surpassed the advanced U-Net deep learning model. Specifically, the method achieved overall accuracy above 0.87, highlighting its reliability across diverse regions and acquisition conditions. Furthermore, the proposed probabilistic framework integrates multitemporal SAR observations with open-access hydrological priors, enabling stable and interpretable flood prediction without reliance on large labeled datasets or high computational resources. This makes the method particularly suitable for real-time deployment in data-scarce or infrastructure-limited regions. Overall, the results demonstrate the method's practical potential for global and long-term flood monitoring, offering a scalable and sensor-agnostic solution for operational disaster response and risk management systems.</span>
+              <span class="lang-zh">由于土地覆盖多样性和遥感数据时间分辨率有限，精确洪水范围检测仍面临挑战。本文提出融合多频SAR数据（X、C、L波段）、土地利用/覆盖信息、历史水体记录和水文模型输出的概率框架，在日本、孟加拉国、美国和中国的洪水事件中，精度超过0.87，优于U-Net深度学习模型。该框架无需大量标注数据，适合在数据匮乏地区实时部署，为全球洪水监测和应急响应提供了可扩展方案。</span>
+              <span class="lang-ja">多様な土地被覆特性とリモートセンシングデータの時間分解能の制約から、正確な洪水域検出は依然困難です。本研究は多周波SAR（X・C・Lバンド）、土地被覆情報、歴史的水体記録、水文モデル出力を統合した確率論的フレームワークを提案。日本・バングラデシュ・米国・中国で精度0.87以上を達成し、U-Net深層学習モデルを上回りました。大規模ラベルデータ不要で、データ不足地域でのリアルタイム展開に適しています。</span>
             </div>
+            <img class="pub-screenshot" src="images/p3.png" alt="Paper screenshot: SAR paper" />
             <div class="news-links">
               <a class="news-link" href="https://www.sciencedirect.com/science/article/abs/pii/S002216942501412X" target="_blank" rel="noopener">Full Paper</a>
               <a class="news-link" href="https://doi.org/10.1016/j.jhydrol.2025.134074" target="_blank" rel="noopener">DOI</a>
             </div>
           </article>
 
-          <!-- 2025-12 AGU oral -->
+          <!-- ③ AGU 2025 oral 202512 — photo + video in same row -->
           <article class="news-item" data-category="conference">
             <div class="news-meta">
-              <span class="news-date">2025 · 12</span>
+              <span class="news-date">202512</span>
               <span class="news-cat cat-conference"><span class="lang-en">Conference</span><span class="lang-zh">学术会议</span><span class="lang-ja">学会</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Oral Presentation at AGU 2025 Annual Meeting, New Orleans</span>
+              <span class="lang-en">Oral presentation in AGU 2025 @ New Orleans</span>
               <span class="lang-zh">在AGU 2025年会（新奥尔良）作口头报告</span>
               <span class="lang-ja">AGU 2025年次大会（ニューオーリンズ）にて口頭発表</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Presented the real-time data assimilation system for Japan-wide flood forecasting, addressing how DA enhances streamflow and flood forecast accuracy and how long its beneficial impact persists for multi-day lead times.</span>
-              <span class="lang-zh">介绍了面向全日本洪水预报的实时数据同化系统，探讨了DA如何提升径流及洪水预报精度，以及改善效果在多日预见期内的持续性。</span>
-              <span class="lang-ja">全国スケール洪水予測のためのリアルタイムデータ同化システムを発表。DAによる流量・洪水予測精度の向上と、その影響が複数日先まで持続するかを議論しました。</span>
+              <span class="lang-en">In the oral talk, I introduce the developed real-time online data assimilation system and its performance in Japan. And also I answer following three questions:
+              <br/>• Can DA enhance streamflow forecasts? How much can it improve?
+              <br/>• Can DA contribute to improving flood forecasts through a more accurate streamflow forecast?
+              <br/>• How long can the improved impact persist in forecasts?</span>
+              <span class="lang-zh">口头报告中，我介绍了所开发的实时在线数据同化系统及其在日本的表现，并回答了以下三个问题：
+              <br/>• DA能否提升径流预报？能改善多少？
+              <br/>• DA能否通过更精准的径流预报进而改善洪水预报？
+              <br/>• 改善效果在预见期内能持续多久？</span>
+              <span class="lang-ja">口頭発表では、開発したリアルタイムオンラインデータ同化システムとその日本での性能を紹介し、以下の3つの問いに答えました：
+              <br/>• DAは流量予測を改善できるか？どの程度改善するか？
+              <br/>• DAはより正確な流量予測を通じて洪水予測にも貢献できるか？
+              <br/>• 改善効果は予測においてどのくらい持続するか？</span>
             </div>
-            <div class="news-photos">
+            <!-- Photo and video in the same row -->
+            <div class="media-row">
               <img src="images/AGU2025.jpg" alt="AGU 2025 oral presentation" />
-            </div>
-            <!-- Video with custom play overlay -->
-            <div class="video-wrapper">
-              <video preload="none" poster="images/cover.jpg">
-                <source src="images/AGU2025.MP4" type="video/mp4" />
-              </video>
-              <div class="video-play-overlay">
-                <button class="play-circle" aria-label="Play video">
-                  <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
-                </button>
-                <span class="video-label">
-                  <span class="lang-en">Watch: AGU 2025 Oral Presentation</span>
-                  <span class="lang-zh">观看：AGU 2025 口头报告</span>
-                  <span class="lang-ja">動画：AGU 2025 口頭発表</span>
-                </span>
+              <div class="video-wrapper">
+                <video preload="none" poster="images/cover.jpg">
+                  <source src="images/AGU2025.MP4" type="video/mp4" />
+                </video>
+                <div class="video-play-overlay">
+                  <button class="play-circle" aria-label="Play video">
+                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                  </button>
+                  <span class="video-label">
+                    <span class="lang-en">Watch: AGU 2025 Oral Presentation</span>
+                    <span class="lang-zh">观看：AGU 2025 口头报告</span>
+                    <span class="lang-ja">動画：AGU 2025 口頭発表</span>
+                  </span>
+                </div>
               </div>
             </div>
           </article>
 
-          <!-- 2025-08 Join Cornell -->
+          <!-- ④ Join Cornell 202508 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2025 · 08</span>
+              <span class="news-date">202508</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Joined Critical Infrastructure Systems Lab @ Cornell University for Ph.D. Study!</span>
+              <span class="lang-en">Join Critical Infrastructure Systems Lab @ Cornell University for my PhD study!</span>
               <span class="lang-zh">加入康奈尔大学关键基础设施系统实验室，开启博士研究！</span>
               <span class="lang-ja">コーネル大学 Critical Infrastructure Systems Lab にてPhD研究を開始！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Joined the Civil and Environmental Engineering department at Cornell University, supervised by Dr. Stefano Galelli, to pursue doctoral research in large-scale water systems and flood forecasting.</span>
-              <span class="lang-zh">加入康奈尔大学土木与环境工程系，在Stefano Galelli博士的指导下开展大尺度水系统与洪水预报方向的博士研究。</span>
-              <span class="lang-ja">コーネル大学土木環境工学科に入学し、Stefano Galelli博士の指導のもと、大規模水システムおよび洪水予測の博士研究を開始しました。</span>
+              <span class="lang-en">Join Civil Environmental and Engineering department in Cornell University and supervised by Dr. Stefano Galelli for PhD study.</span>
+              <span class="lang-zh">加入康奈尔大学土木与环境工程系，在Stefano Galelli博士指导下开展博士研究。</span>
+              <span class="lang-ja">コーネル大学土木環境工学科に入学し、Stefano Galelli博士の指導のもとPhD研究を開始しました。</span>
             </div>
             <div class="news-photos">
               <img src="images/Stefano202508.jpg" alt="Cornell University, August 2025" />
             </div>
           </article>
 
-          <!-- 2025-08 Graduate UTokyo -->
+          <!-- ⑤ Graduate UTokyo 202508 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2025 · 08</span>
+              <span class="news-date">202508</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Graduated from Yoshimura Lab @ the University of Tokyo — M.S. Received!</span>
-              <span class="lang-zh">从东京大学芳村研究室毕业，获得硕士学位！</span>
-              <span class="lang-ja">東京大学 芳村研究室を卒業 — 修士号を取得！</span>
+              <span class="lang-en">Graduate from Yoshimura Lab @ the University of Tokyo!</span>
+              <span class="lang-zh">从东京大学芳村研究室毕业！</span>
+              <span class="lang-ja">東京大学 芳村研究室を卒業！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Received the Master of Science degree in Natural Environmental Studies from the University of Tokyo, under the supervision of Prof. Kei Yoshimura and Assoc. Prof. Dai Yamazaki (Institute of Industrial Science, IIS).</span>
-              <span class="lang-zh">在东京大学生产技术研究所（IIS）芳村圭教授和山崎大副教授的联合指导下，获得自然环境学专攻硕士学位。</span>
-              <span class="lang-ja">東京大学生産技術研究所（IIS）の芳村圭教授・山崎大准教授のご指導のもと、自然環境学専攻の修士号を取得しました。</span>
+              <span class="lang-en">Received my master degree from Natural Environmental Engineering and thanks for the supervision from Kei Yoshimura (Professor at IIS) and Dai Yamazaki (Associate Professor at IIS).</span>
+              <span class="lang-zh">在东京大学生产技术研究所芳村圭教授和山崎大副教授的联合指导下，获得自然环境工学硕士学位，谨表感谢。</span>
+              <span class="lang-ja">東京大学生産技術研究所の芳村圭教授・山崎大准教授のご指導のもと、自然環境工学の修士号を取得しました。心より感謝申し上げます。</span>
             </div>
             <div class="news-photos">
               <img src="images/utokyo1.JPG" alt="University of Tokyo graduation 2025" />
@@ -173,42 +194,42 @@
             </div>
           </article>
 
-          <!-- 2025-05 UTEC grant -->
+          <!-- ⑥ UTEC grant 202505 -->
           <article class="news-item" data-category="grant">
             <div class="news-meta">
-              <span class="news-date">2025 · 05</span>
+              <span class="news-date">202505</span>
               <span class="news-cat cat-grant"><span class="lang-en">Grant</span><span class="lang-zh">资助</span><span class="lang-ja">グラント</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Received UTEC Young Researchers Challenge Support Funding to Visit Cornell University</span>
-              <span class="lang-zh">获得UTEC若手海外自由展開・研鑽支援プログラム资助，赴康奈尔大学访学</span>
-              <span class="lang-ja">UTECの若手海外自由展開・研鑽支援プログラムに採択され、コーネル大学への訪問研究を実施</span>
+              <span class="lang-en">Receive funding support from UTEC Young Researchers Challenge Support Funding to be a visiting student in Cornell University!</span>
+              <span class="lang-zh">获得UTEC若手海外自由展開・研鑽支援プログラム资助，赴康奈尔大学访学！</span>
+              <span class="lang-ja">UTECの若手海外自由展開・研鑽支援プログラムに採択され、コーネル大学への訪問研究を実施！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Selected as one of the top 6 young researchers at the University of Tokyo for international research funding. Visited Cornell University for collaborative research discussions and knowledge exchange.</span>
-              <span class="lang-zh">作为东京大学6名优秀青年研究者之一获得该项资助，赴康奈尔大学进行学术交流与合作研究。</span>
-              <span class="lang-ja">東京大学の若手研究者6名の一人として選出され、コーネル大学にて共同研究議論・知識交流を実施しました。</span>
+              <span class="lang-en">Received the financial support from the University of Tokyo (top 6 young researchers) to visit advanced lab abroad. I chose to visit Cornell University and have a good research discussion and corporation there.</span>
+              <span class="lang-zh">作为东京大学6名优秀青年研究者之一获得资助，赴海外顶尖实验室访学。选择访问康奈尔大学，进行了深入的学术交流与合作研究。</span>
+              <span class="lang-ja">東京大学の若手研究者6名の一人として選出され、海外先端ラボへの訪問研究費を受給。コーネル大学を選び、充実した研究議論と共同研究を行いました。</span>
             </div>
             <div class="news-photos">
               <img src="images/cornell202505.jpg" alt="Cornell University visit, May 2025" />
             </div>
           </article>
 
-          <!-- 2025-03 Kyushu talk -->
+          <!-- ⑦ Kyushu talk 202503 -->
           <article class="news-item" data-category="talk">
             <div class="news-meta">
-              <span class="news-date">2025 · 03</span>
+              <span class="news-date">202503</span>
               <span class="news-cat cat-talk"><span class="lang-en">Invited Talk</span><span class="lang-zh">特邀报告</span><span class="lang-ja">招待講演</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Invited Talk for JAXA Today's Earth Project @ Kyushu University</span>
+              <span class="lang-en">Invited talk for JAXA Today's Earth project @ Kyushu University</span>
               <span class="lang-zh">受邀在九州大学作JAXA Today's Earth项目学术报告</span>
               <span class="lang-ja">九州大学にてJAXA Today's Earth プロジェクトへの招待講演</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Delivered an invited talk on the data assimilation system for the MATSIRO + CaMa-Flood hydrological model and its potential application in JAXA's global flood forecast product Today's Earth.</span>
+              <span class="lang-en">Given an invited talk about the development of a data assimilation system for hydrological model MATSIRO + CAMA-Flood, and its future potential to be applied in JAXA flood forecast product Today's Earth.</span>
               <span class="lang-zh">就MATSIRO+CaMa-Flood水文模型数据同化系统的开发及其在JAXA洪水预报产品Today's Earth中的潜在应用作特邀报告。</span>
-              <span class="lang-ja">MATSIRO＋CaMa-Floodへのデータ同化システム開発とJAXA「Today's Earth」への応用可能性について招待講演を行いました。</span>
+              <span class="lang-ja">MATSIRO＋CaMa-Floodモデルへのデータ同化システム開発と、JAXAの洪水予測プロダクト「Today's Earth」への応用可能性について招待講演を行いました。</span>
             </div>
             <div class="news-photos">
               <img src="images/kyushu1.jpg" alt="Kyushu University invited talk" />
@@ -216,21 +237,24 @@
             </div>
           </article>
 
-          <!-- 2024-12 AGU posters -->
+          <!-- ⑧ AGU 2024 posters 202412 -->
           <article class="news-item" data-category="conference">
             <div class="news-meta">
-              <span class="news-date">2024 · 12</span>
+              <span class="news-date">202412</span>
               <span class="news-cat cat-conference"><span class="lang-en">Conference</span><span class="lang-zh">学术会议</span><span class="lang-ja">学会</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Two Poster Presentations at AGU 2024 Annual Meeting, Washington D.C.</span>
+              <span class="lang-en">Two poster presentations in AGU 2024 @ Washington DC</span>
               <span class="lang-zh">在AGU 2024年会（华盛顿特区）作两篇墙报展示</span>
               <span class="lang-ja">AGU 2024年次大会（ワシントンD.C.）にてポスター発表2件</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Presented two posters: (1) evaluation of SWOT satellite performance in measuring small rivers in Japan; (2) enhancing ensemble-based data assimilation for hydrological models during Typhoon Hagibis.</span>
-              <span class="lang-zh">两篇墙报分别聚焦于：（1）SWOT卫星在日本小河流水位测量精度评估；（2）台风"哈吉贝斯"期间增强集合数据同化性能的研究。</span>
-              <span class="lang-ja">2件：（1）日本の中小河川におけるSWOT衛星の精度評価、（2）台風ハギビス期間中の集合データ同化強化手法の研究。</span>
+              <span class="lang-en">One poster is about Evaluate the performance of SWOT measurement in small rivers. The Surface Water and Ocean Topography (SWOT) mission provides an unparalleled ability to measure global surface water resources. In this study we provide a comparison between the high-resolution (HR) SWOT products and in-situ gauges for a range of surface water systems in Japan.
+              <br/><br/>Another poster is about Enhancing Data Assimilation Performance in Hydrological Models Through More Effective Ensemble Simulations: A Case Study during Typhoon Hagibis in Japan. In this study, we design various ensemble spreads to explore sources of model uncertainty and identify more effective ensemble simulations to enhance DA. We focus on the period of Typhoon Hagibis in Japan. To simulate streamflow during this event, we use meteorological data to drive the Minimal Advanced Treatments of Surface Interaction and Runoff (MATSIRO) land surface model (LSM), which generates runoff for the Catchment-based Macro-scale Floodplain Model (CaMa-Flood). Key sources of model errors include uncertainties in rainfall, hydrological parameters within the LSM, and hydraulic parameters in CaMa-Flood. To evaluate these uncertainties, we conduct six experiments to generate 20 ensembles for each experiment.</span>
+              <span class="lang-zh">墙报一：评估SWOT卫星在小河流测量中的表现。SWOT任务提供了无与伦比的全球地表水资源测量能力。本研究将高分辨率SWOT产品与日本多种地表水系统的实测数据进行比较分析。
+              <br/><br/>墙报二：通过更有效的集合模拟增强水文模型中的数据同化性能——以台风"哈吉贝斯"为例。本研究设计了多种集合扩展方案，探索模型不确定性来源，并针对台风哈吉贝斯期间的日本场景开展了六组共120个集合成员的实验。</span>
+              <span class="lang-ja">ポスター①：日本の中小河川におけるSWOT衛星の精度評価。SWOT高分解能プロダクトと現地観測データを比較分析しました。
+              <br/><br/>ポスター②：台風ハギビス期間中の水文モデルへのデータ同化改善。MATSIRO-CaMa-Floodモデルを用い、降雨・土壌パラメータ・水理パラメータの不確実性を評価する6実験（各20アンサンブル）を実施しました。</span>
             </div>
             <div class="news-photos">
               <img src="images/AGU20241.jpg" alt="AGU 2024 poster 1" />
@@ -238,62 +262,68 @@
             </div>
           </article>
 
-          <!-- 2024-05 Urban Climate -->
+          <!-- ⑨ Urban Climate paper 202405 -->
           <article class="news-item" data-category="publication">
             <div class="news-meta">
-              <span class="news-date">2024 · 05</span>
+              <span class="news-date">202405</span>
               <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Co-authored Heatwave Modelling Paper Published in <em>Urban Climate</em></span>
+              <span class="lang-en">Publish heatwave modelling co-author paper on Urban Climate</span>
               <span class="lang-zh">合著城市热浪模拟论文发表于《城市气候》（Urban Climate）</span>
-              <span class="lang-ja">都市ヒートウェーブモデリング共著論文が <em>Urban Climate</em> に掲載</span>
+              <span class="lang-ja">都市ヒートウェーブモデリング共著論文が Urban Climate に掲載</span>
+            </div>
+            <div class="news-paper-title">
+              <span class="lang-en">Assessing daytime discrepancies and key factors in urban thermal environments: A local climate zones-based modeling study in five Chinese cities</span>
+              <span class="lang-zh">城市热环境日间差异及关键因素评估：基于局地气候区分类的五城市模拟研究</span>
+              <span class="lang-ja">都市熱環境の昼間格差と主要因子の評価：中国5都市における局地気候区ベースのモデリング研究</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Applied the WRF model with BEP-BEM urban scheme to simulate thermal environments in five Chinese cities during heatwave events. Anthropogenic heat and geometric urban parameters were found to be the primary drivers of air temperature differences across local climate zones.</span>
-              <span class="lang-zh">应用耦合BEP-BEM城市方案的WRF模式，模拟中国五座城市热浪期间的热环境。研究发现人为热排放与城市几何参数是不同局地气候区气温差异的主要驱动因子。</span>
-              <span class="lang-ja">BEP-BEM都市スキームのWRFで中国5都市のヒートウェーブ時の熱環境を解析。人為的発熱と都市幾何パラメータが局地気候区間の気温差の主因であることを明らかにしました。</span>
+              <span class="lang-en">In this study, we apply the WRF model with the BEP-BEM urban scheme to simulate the thermal environment of built-up areas in five representative Chinese cities during heatwave events. By employing high-resolution urban land use/land cover data based on local climate zone (LCZ) classification, we aim to examine the heterogeneous nature of the urban thermal environment. The results indicate that air temperature is higher in compact areas (i.e., LCZ1 and LCZ2) and lower in open and sparse areas (i.e., LCZ9 and LCZ6), similar to many observational and simulation results. When temperature, humidity, and wind speed are all considered, the heat stress metric presents characteristics that are analogous to the air temperature pattern. We further analyze the factors (i.e., anthropogenic heat, thermal parameters, and geometrical parameters) that contribute to air temperature differences between LCZs and find that anthropogenic heat and geometrical parameters are the primary contributors. Anthropogenic heat accounts for nearly three fifths of the total difference, and geometrical parameters account for more than two fifths, while thermal parameters have little effect. These findings could assist municipal planners design appropriate mitigation strategies to reduce the effects of urban overheating and create a more habitable urban environment.</span>
+              <span class="lang-zh">本研究应用耦合BEP-BEM城市方案的WRF模式，模拟中国五座代表性城市热浪期间建成区的热环境。结果表明，紧凑区域（LCZ1、LCZ2）气温较高，开放稀疏区域（LCZ9、LCZ6）气温较低。进一步分析发现，人为热排放与几何参数是不同局地气候区气温差异的主要贡献因子，分别占总差异的近3/5和超过2/5，热力参数影响较小。这些发现可为城市规划者制定缓解城市过热的适应策略提供参考。</span>
+              <span class="lang-ja">BEP-BEM都市スキームを組み込んだWRFモデルで中国5都市のヒートウェーブ時の熱環境を解析しました。LCZ分類に基づく高解像度データを使用。LCZ1・2の密集地域で気温が高く、LCZ9・6の開放地域で低いことを確認。人為的発熱と都市幾何パラメータがLCZ間の気温差の主要因（各約3/5・2/5）であることを明らかにしました。</span>
             </div>
+            <img class="pub-screenshot" src="images/p2.png" alt="Paper screenshot: Urban Climate paper" />
             <div class="news-links">
               <a class="news-link" href="https://www.sciencedirect.com/science/article/abs/pii/S2212095524001895" target="_blank" rel="noopener">Full Paper</a>
               <a class="news-link" href="https://doi.org/10.1016/j.uclim.2024.101993" target="_blank" rel="noopener">DOI</a>
             </div>
           </article>
 
-          <!-- 2024-04 Best Presentation UTokyo -->
+          <!-- ⑩ Best Presentation UTokyo 202404 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2024 · 04</span>
+              <span class="news-date">202404</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Best Presentation Award — Hydrosphere Science Project @ University of Tokyo</span>
+              <span class="lang-en">Receive Best Presentation Award of Hydrosphere Science Project @ University of Tokyo</span>
               <span class="lang-zh">荣获东京大学水圈科学项目最佳演讲奖</span>
               <span class="lang-ja">東京大学 水圏科学プロジェクト 最優秀発表賞を受賞</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Received the Best Presentation Award for a poster on evaluating SWOT satellite performance in small rivers, supervised by Assoc. Prof. Dai Yamazaki.</span>
-              <span class="lang-zh">因关于SWOT卫星小河流测量性能评估的墙报荣获最佳演讲奖，该研究由山崎大副教授指导。</span>
-              <span class="lang-ja">山崎大准教授指導のもと、SWOTの中小河川精度評価ポスター発表で最優秀発表賞を受賞しました。</span>
+              <span class="lang-en">Given the poster presentation about evaluation of SWOT performance in small rivers supervised by Dai Yamazaki and receive the best presentation award!</span>
+              <span class="lang-zh">在山崎大副教授指导下就SWOT卫星小河流性能评估作墙报展示，荣获最佳演讲奖！</span>
+              <span class="lang-ja">山崎大准教授指導のもとSWOTの中小河川精度評価ポスターを発表し、最優秀発表賞を受賞！</span>
             </div>
             <div class="news-photos">
               <img src="images/Utokyo202404.jpg" alt="Best Presentation Award, University of Tokyo 2024" />
             </div>
           </article>
 
-          <!-- 2023-10 Join UTokyo -->
+          <!-- ⑪ Join UTokyo 202310 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2023 · 10</span>
+              <span class="news-date">202310</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Joined Yoshimura Lab @ the University of Tokyo for Master's Study!</span>
+              <span class="lang-en">Join Yoshimura Lab @ the University of Tokyo for my master study!</span>
               <span class="lang-zh">加入东京大学芳村研究室，开启硕士研究！</span>
               <span class="lang-ja">東京大学 芳村研究室に入学し、修士研究を開始！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Joined the Graduate School of Frontier Sciences (GSFS), Natural Environmental Studies, at the University of Tokyo, supervised by Prof. Kei Yoshimura.</span>
+              <span class="lang-en">Join natural environmental studies, GSFS department in the University of Tokyo and supervised by Dr. Kei Yoshimura for my master study.</span>
               <span class="lang-zh">加入东京大学新领域创成科学研究科自然环境学专攻，在芳村圭教授的指导下开展硕士研究。</span>
               <span class="lang-ja">東京大学大学院新領域創成科学研究科自然環境学専攻に入学し、芳村圭教授のご指導のもと修士研究を開始しました。</span>
             </div>
@@ -302,14 +332,14 @@
             </div>
           </article>
 
-          <!-- 2023-10 Challenge Cup National Third -->
+          <!-- ⑫ Challenge Cup National Third 202310 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2023 · 10</span>
+              <span class="news-date">202310</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Third-Class National Prize — "Challenge Cup" Chinese College Student Entrepreneurship Competition</span>
+              <span class="lang-en">Receive the Third-Class National Prize from "Challenge Cup" Chinese College Student Entrepreneurship Plan Competition</span>
               <span class="lang-zh">荣获"挑战杯"中国大学生创业计划竞赛全国三等奖</span>
               <span class="lang-ja">「挑戦杯」中国大学生起業計画コンペ 全国三等賞を受賞</span>
             </div>
@@ -318,21 +348,21 @@
             </div>
           </article>
 
-          <!-- 2023-06 Graduate SYSU -->
+          <!-- ⑬ Graduate SYSU 202306 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2023 · 06</span>
+              <span class="news-date">202306</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Milestone</span><span class="lang-zh">里程碑</span><span class="lang-ja">マイルストーン</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Graduated from Sun Yat-sen University — B.S. &amp; Excellent Thesis Award!</span>
-              <span class="lang-zh">从中山大学毕业，获学士学位及优秀毕业论文奖！</span>
-              <span class="lang-ja">中山大学を卒業 — 学士号・優秀卒業論文賞受賞！</span>
+              <span class="lang-en">Graduate from Land Surface Process Model Development Lab @ Sun Yat-sen University!</span>
+              <span class="lang-zh">从中山大学陆面过程模式开发实验室毕业！</span>
+              <span class="lang-ja">中山大学 陸面過程モデル開発研究室を卒業！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Received the B.S. in Atmospheric Science from Sun Yat-sen University under Assoc. Prof. Hua Yuan. Thesis "Land Use and Land Cover Change Significantly Shifted Local Water Availability Globally over the Past Three Decades" was awarded Excellent Bachelor Thesis (5th out of 130).</span>
-              <span class="lang-zh">在袁华副教授指导下获得大气科学学士学位，毕业论文《过去三十年土地利用/覆盖变化对全球局地水资源可用性的显著影响》荣获优秀毕业论文奖（130篇第5名）。</span>
-              <span class="lang-ja">袁華准教授のご指導のもと大気科学の学士号を取得。卒業論文が優秀卒業論文賞（130編中5位）を受賞しました。</span>
+              <span class="lang-en">Received my bachelor's degree from Atmospheric Science department, Sun Yat-sen University thanks for the supervision from Hua Yuan (Associate Professor at Atmospheric Science). And my bachelor thesis paper "Land Use and Land Cover Change Significantly Shifted Local Water Availability Globally over the past Three Decades" has been awarded as the Excellent Bachelor Thesis in Sun Yat-sen University (5/130).</span>
+              <span class="lang-zh">在中山大学大气科学系袁华副教授的指导下，获得大气科学学士学位。毕业论文《过去三十年土地利用/覆盖变化对全球局地水资源可用性的显著影响》荣获中山大学优秀毕业论文奖（130篇第5名）。</span>
+              <span class="lang-ja">中山大学大気科学系の袁華准教授のご指導のもと学士号を取得。卒業論文「過去30年間の土地利用・土地被覆変化が世界の局地的水利用可能量に与えた影響」が優秀卒業論文賞（130編中5位）を受賞しました。</span>
             </div>
             <div class="news-photos">
               <img src="images/Hua1.JPG" alt="Graduation Sun Yat-sen University" />
@@ -341,16 +371,21 @@
             </div>
           </article>
 
-          <!-- 2023-04 Challenge Cup Golden Prize -->
+          <!-- ⑭ Challenge Cup Golden Prize 202304 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2023 · 04</span>
+              <span class="news-date">202304</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Golden Prize — "Challenge Cup" Competition, Guangdong Province (Top 1 in 170,000+ participants!)</span>
-              <span class="lang-zh">荣获"挑战杯"广东省金奖（逾17万参赛者中排名第1！）</span>
-              <span class="lang-ja">「挑戦杯」広東省大会 金賞受賞（17万人以上の参加者中1位！）</span>
+              <span class="lang-en">Receive the Golden Prize from "Challenge Cup" Competition @ Guangdong Province!</span>
+              <span class="lang-zh">荣获"挑战杯"广东省金奖！</span>
+              <span class="lang-ja">「挑戦杯」広東省大会 金賞受賞！</span>
+            </div>
+            <div class="news-desc">
+              <span class="lang-en">Among more than 170,000 students and 2129 projects, we got the top prize (1/17000)!</span>
+              <span class="lang-zh">在逾17万名学生、2129个项目的角逐中，我们团队荣获最高奖（17000个项目中第1名）！</span>
+              <span class="lang-ja">17万人以上の学生・2,129プロジェクトの中から、最高賞（17,000プロジェクト中1位）を獲得！</span>
             </div>
             <div class="news-photos">
               <img src="images/Challenge2.JPG" alt="Challenge Cup Golden Prize Guangdong" />
@@ -358,43 +393,49 @@
             </div>
           </article>
 
-          <!-- 2022-10 National Scholarship -->
+          <!-- ⑮ National Scholarship 202210 -->
           <article class="news-item" data-category="milestone">
             <div class="news-meta">
-              <span class="news-date">2022 · 10</span>
+              <span class="news-date">202210</span>
               <span class="news-cat cat-milestone"><span class="lang-en">Award</span><span class="lang-zh">获奖</span><span class="lang-ja">受賞</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Received National Scholarship Award — Top 0.02% of Students in China</span>
-              <span class="lang-zh">荣获国家奖学金（全国前0.02%学生）</span>
-              <span class="lang-ja">国家奨学金受賞 — 中国全学生の上位0.02%</span>
+              <span class="lang-en">Receive National Scholarship Award (top 0.02% students in China)!</span>
+              <span class="lang-zh">荣获国家奖学金（全国前0.02%学生）！</span>
+              <span class="lang-ja">国家奨学金受賞（中国全学生の上位0.02%）！</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Awarded China's highest-level national scholarship, recognizing the top 0.02% of students nationwide.</span>
-              <span class="lang-zh">荣获中国最高级别国家奖学金，代表全国前0.02%的优秀学生。</span>
-              <span class="lang-ja">中国最高レベルの国家奨学金を受賞。全国学生の上位0.02%に相当します。</span>
+              <span class="lang-en">This is the highest-level national scholarship for all Chinese students!</span>
+              <span class="lang-zh">这是面向全体中国学生的最高级别国家奖学金！</span>
+              <span class="lang-ja">中国全学生を対象とした最高レベルの国家奨学金です！</span>
             </div>
             <div class="news-photos">
               <img src="images/Award.jpg" alt="National Scholarship Award" />
             </div>
           </article>
 
-          <!-- 2022-10 Remote Sensing paper -->
+          <!-- ⑯ Remote Sensing paper 202210 -->
           <article class="news-item" data-category="publication">
             <div class="news-meta">
-              <span class="news-date">2022 · 10</span>
+              <span class="news-date">202210</span>
               <span class="news-cat cat-publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span><span class="lang-ja">論文</span></span>
             </div>
             <div class="news-title">
-              <span class="lang-en">Aerosol Spatiotemporal Characteristics over Greater Bay Area — Published in <em>Remote Sensing</em></span>
-              <span class="lang-zh">粤港澳大湾区海域气溶胶四维时空特征研究——发表于《遥感》</span>
-              <span class="lang-ja">粤港澳大湾区沿海エアロゾル四次元時空間特性 — <em>Remote Sensing</em> 掲載</span>
+              <span class="lang-en">Publish satellite-observed pollutant paper on Remote Sensing</span>
+              <span class="lang-zh">卫星观测污染物研究论文发表于《遥感》（Remote Sensing）</span>
+              <span class="lang-ja">衛星観測汚染物質研究論文が Remote Sensing に掲載</span>
+            </div>
+            <div class="news-paper-title">
+              <span class="lang-en">Satellite-Observed Four-Dimensional Spatiotemporal Characteristics of Maritime Aerosol Types over the Coastal Waters of the Guangdong–Hong Kong–Macao Greater Bay Area and the Northern South China Sea</span>
+              <span class="lang-zh">粤港澳大湾区及南海北部沿海水域卫星观测气溶胶类型四维时空特征</span>
+              <span class="lang-ja">粤港澳大湾区および南シナ海北部沿海の衛星観測エアロゾルタイプの四次元時空間特性</span>
             </div>
             <div class="news-desc">
-              <span class="lang-en">Analyzed four-dimensional spatiotemporal characteristics of aerosol types over the Guangdong–Hong Kong–Macao Greater Bay Area using 15 years (2006–2020) of satellite lidar profiles, revealing a decreasing terrestrial aerosol influence in coastal waters.</span>
-              <span class="lang-zh">利用2006—2020年15年卫星激光雷达廓线数据，分析了粤港澳大湾区沿海气溶胶类型的四维时空特征，揭示陆地气溶胶对沿海水域影响的减弱趋势。</span>
-              <span class="lang-ja">2006〜2020年の衛星ライダーデータを用いて粤港澳大湾区沿海のエアロゾルを解析し、陸源エアロゾルの影響が沿海で低下していることを明らかにしました。</span>
+              <span class="lang-en">Based on long-term satellite lidar profiles from 2006 to 2020, we analyzed the four-dimensional (x-y-z-t) spatiotemporal characteristics of different aerosol types over the coastal waters of the Guangdong–Hong Kong–Macao Greater Bay Area (GBA). We revealed that the terrestrial aerosol influence tended to decrease in the study areas. The insight into aerosol types and its variation will facilitate the understanding of the aerosol climate effects and pollutant control in the coastal waters of the GBA and the NSCS.</span>
+              <span class="lang-zh">基于2006—2020年长期卫星激光雷达廓线数据，分析了粤港澳大湾区（GBA）沿海水域不同气溶胶类型的四维（x-y-z-t）时空特征。研究揭示陆地气溶胶影响呈减弱趋势，这对于理解GBA及南海北部的气溶胶气候效应和污染物控制具有重要意义。</span>
+              <span class="lang-ja">2006〜2020年の長期衛星ライダーデータを用いて、粤港澳大湾区（GBA）沿海の異なるエアロゾルタイプの四次元（x-y-z-t）時空間特性を解析しました。陸源エアロゾルの影響が減少傾向にあることを明らかにし、GBAおよび南シナ海北部の気候効果と汚染物質制御の理解に貢献しています。</span>
             </div>
+            <img class="pub-screenshot" src="images/p1.png" alt="Paper screenshot: Remote Sensing paper" />
             <div class="news-links">
               <a class="news-link" href="https://www.mdpi.com/2072-4292/14/21/5464" target="_blank" rel="noopener">Full Paper</a>
               <a class="news-link" href="https://doi.org/10.3390/rs14215464" target="_blank" rel="noopener">DOI</a>
@@ -403,7 +444,7 @@
 
         </div><!-- end news-feed -->
 
-        <!-- ── Filter nav (right) ─────────────────────────── -->
+        <!-- ── Filter nav ──────────────────────────────────── -->
         <aside class="news-filter-nav">
           <div class="filter-title">
             <span class="lang-en">Filter</span>

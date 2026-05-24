@@ -7,8 +7,8 @@
   position: relative;
   height: 420px;
   background-image:
-    linear-gradient(135deg, rgba(29,37,53,0.82) 0%, rgba(28,95,166,0.74) 100%),
-    url('../images/utokyo3.JPG');
+    linear-gradient(rgba(20,30,50,0.42), rgba(20,30,50,0.50)),
+    url('../images/home_background.jpg.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -171,6 +171,15 @@
   box-shadow: var(--shadow-sm);
 }
 .profile-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ── Cornell logo ───────────────────────────────────────── */
+.cornell-logo {
+  height: 44px;
+  width: auto;
+  margin-top: 0.6rem;
+  border-radius: 0;
+  display: block;
+}
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
