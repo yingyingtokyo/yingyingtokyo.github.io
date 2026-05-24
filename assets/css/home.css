@@ -59,7 +59,7 @@
   box-shadow: var(--shadow-sm);
 }
 
-.intro-text { flex: 0 0 140px; }
+.intro-text { flex: 1; min-width: 0; }
 .intro-name {
   font-size: 1.7rem;
   font-weight: 800;
@@ -175,9 +175,9 @@
 
 /* ── Cornell logo ───────────────────────────────────────── */
 .cornell-logo {
-  height: 54px;
+  height: 38px;
   width: auto;
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
   border-radius: 0;
   display: block;
 }
