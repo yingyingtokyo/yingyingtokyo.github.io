@@ -175,9 +175,9 @@
 
 /* ── Cornell logo ───────────────────────────────────────── */
 .cornell-logo {
-  width: 100%;
-  height: auto;
-  margin-top: 0.6rem;
+  height: 54px;
+  width: auto;
+  margin-top: 0.75rem;
   border-radius: 0;
   display: block;
 }
