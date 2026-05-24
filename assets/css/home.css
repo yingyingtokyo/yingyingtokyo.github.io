@@ -7,8 +7,8 @@
   position: relative;
   height: 420px;
   background-image:
-    linear-gradient(rgba(20,30,50,0.42), rgba(20,30,50,0.50)),
-    url('../images/home_background.jpg.webp');
+    linear-gradient(rgba(20,30,50,0.22), rgba(20,30,50,0.38)),
+    url('../../images/home_background.jpg.webp');
   background-size: cover;
   background-position: center;
   display: flex;
