@@ -190,6 +190,17 @@
   .intro-card { padding: 1.5rem; }
   .self-photo { width: 120px; height: 150px; }
   .intro-name { font-size: 1.4rem; }
+
+  /* Affil text + Cornell logo side by side on mobile */
+  .affil-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+  }
+  .affil-row .intro-affil { margin-bottom: 0; }
+  .cornell-logo { height: 28px; margin-top: 0; }
 }
 @media (max-width: 480px) {
   .intro-card { padding: 1.25rem; }
