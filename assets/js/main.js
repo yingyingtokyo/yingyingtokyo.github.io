@@ -91,6 +91,53 @@
     });
   }
 
+  /* ── Research map lightbox ──────────────────────────────── */
+  function initImageLightbox() {
+    const lightbox  = document.getElementById('img-lightbox');
+    if (!lightbox) return;
+    const lbImg     = document.getElementById('lightbox-img');
+    const backdrop  = lightbox.querySelector('.lightbox-backdrop');
+    const closeBtn  = lightbox.querySelector('.lightbox-close');
+
+    let scale = 1;
+    const MIN_SCALE = 1, MAX_SCALE = 6;
+
+    function openLightbox(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt || '';
+      scale = 1;
+      lbImg.style.transform = '';
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      scale = 1;
+      lbImg.style.transform = '';
+    }
+
+    // Open when research map image is clicked
+    document.querySelectorAll('.research-map-figure img').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    });
+
+    backdrop.addEventListener('click', closeLightbox);
+    closeBtn.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+
+    // Scroll-wheel zoom (desktop)
+    lbImg.addEventListener('wheel', e => {
+      e.preventDefault();
+      scale += e.deltaY < 0 ? 0.18 : -0.18;
+      scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale));
+      lbImg.style.transform = scale === 1 ? '' : `scale(${scale.toFixed(2)})`;
+    }, { passive: false });
+  }
+
   /* ── DOM ready ──────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
     setLang(localStorage.getItem('yl-lang') || 'en');
@@ -98,6 +145,7 @@
     highlightNav();
     initNewsFilter();
     initVideoOverlays();
+    initImageLightbox();
 
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
